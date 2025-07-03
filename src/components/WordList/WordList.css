@@ -1,0 +1,28 @@
+.word-list-container {
+  padding: 24px;
+}
+
+.word-list-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.new-words-button {
+  height: 48px;
+  border-radius: 12px;
+  padding: 0 24px;
+  background-color: rgba(74, 128, 240, 1);
+  color: rgba(255, 255, 255, 1);
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.word-list-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+  align-items: start;
+}

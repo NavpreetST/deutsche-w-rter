@@ -1,0 +1,152 @@
+{
+  "designSystemProfile": {
+    "name": "Futuristic Gaming UI",
+    "version": "1.0",
+    "description": "A design system for a modern, dark-themed gaming interface with clean lines, rounded corners, and a focus on clarity.",
+    "style": {
+      "theme": "Dark Mode",
+      "aesthetic": ["Futuristic", "Clean", "Minimalist", "Glassmorphism-Lite"],
+      "overallFeel": "The UI combines a dark, immersive background with bright, glowing accent colors and soft, rounded components to create a high-tech yet approachable feel."
+    },
+    "colors": {
+      "background": {
+        "primary": "rgba(23, 26, 40, 1)",
+        "description": "A very dark, deep desaturated blue, used for the main application background."
+      },
+      "component": {
+        "light": "rgba(255, 255, 255, 0.95)",
+        "dark": "rgba(37, 41, 60, 1)",
+        "description": "Components use either a light, off-white with high transparency or a dark gray-blue, creating a layered effect."
+      },
+      "accent": {
+        "primary": "rgba(74, 128, 240, 1)",
+        "secondary": "rgba(249, 168, 37, 1)",
+        "description": "A vibrant blue for interactive elements, highlights, and progress indicators. A secondary warm color (yellow/orange) is used for tags or secondary status."
+      },
+      "text": {
+        "primary": "rgba(224, 224, 224, 1)",
+        "secondary": "rgba(138, 145, 161, 1)",
+        "interactive": "rgba(255, 255, 255, 1)",
+        "description": "Primary text is off-white for readability. Secondary text is a muted gray for labels and less critical information. Text on colored buttons is pure white."
+      },
+      "border": {
+        "default": "rgba(255, 255, 255, 0.1)",
+        "selected": "rgba(74, 128, 240, 1)",
+        "description": "Borders are subtle or non-existent, except for highlighting selected or active items."
+      }
+    },
+    "typography": {
+      "fontFamily": "Sans-Serif (e.g., Inter, Roboto, SF Pro)",
+      "hierarchy": [
+        {
+          "level": "H1 (Screen Title)",
+          "fontSize": "20-24px",
+          "fontWeight": "600 (Semibold)",
+          "case": "Sentence case"
+        },
+        {
+          "level": "H2 (Card Title)",
+          "fontSize": "16-18px",
+          "fontWeight": "500 (Medium)",
+          "case": "Sentence case"
+        },
+        {
+          "level": "Body",
+          "fontSize": "14px",
+          "fontWeight": "400 (Regular)",
+          "lineHeight": "1.5"
+        },
+        {
+          "level": "Label/Meta",
+          "fontSize": "12px",
+          "fontWeight": "400 (Regular)",
+          "color": "colors.text.secondary"
+        },
+        {
+          "level": "Button",
+          "fontSize": "14px",
+          "fontWeight": "500 (Medium)"
+        }
+      ]
+    },
+    "layout": {
+      "gridSystem": "Flexible grid, component-based",
+      "spacingUnit": "8px",
+      "principles": [
+        "Use generous, consistent whitespace between elements and components to reduce cognitive load.",
+        "Align elements logically within a grid to create a sense of order.",
+        "Employ a multi-column structure, often with a main content area and a sidebar."
+      ]
+    },
+    "components": {
+      "card": {
+        "borderRadius": "16px",
+        "padding": "24px",
+        "boxShadow": "0px 10px 30px rgba(0, 0, 0, 0.2)",
+        "backgroundColor": ["colors.component.light", "colors.component.dark"],
+        "description": "The primary container for content modules. Uses soft shadows for depth."
+      },
+      "button": {
+        "style": "Primary",
+        "height": "48px",
+        "borderRadius": "12px",
+        "padding": "0 24px",
+        "backgroundColor": "colors.accent.primary",
+        "textColor": "colors.text.interactive",
+        "description": "Primary call-to-action buttons are solid, bright, and inviting."
+      },
+      "iconButton": {
+        "size": "32x32px or 40x40px",
+        "borderRadius": "50% (Circular)",
+        "backgroundColor": "rgba(255, 255, 255, 0.1)",
+        "iconColor": "colors.text.primary",
+        "description": "Subtle, circular buttons for secondary actions."
+      },
+      "listItem": {
+        "padding": "16px",
+        "borderRadius": "12px",
+        "hoverState": {
+          "backgroundColor": "rgba(255, 255, 255, 0.05)"
+        },
+        "layout": "Flexbox (Avatar/Icon -> Text Content -> Metadata/Action)",
+        "separator": "None, relies on spacing."
+      },
+      "progressBar": {
+        "height": "8px",
+        "borderRadius": "4px",
+        "trackColor": "rgba(255, 255, 255, 0.1)",
+        "fillColor": "colors.accent.primary"
+      },
+      "tag": {
+        "height": "24px",
+        "borderRadius": "6px",
+        "padding": "4px 8px",
+        "fontSize": "12px",
+        "backgroundColor": "rgba(255, 255, 255, 0.1)"
+      },
+      "avatar": {
+        "shape": "Circle",
+        "size": ["24px", "32px", "40px"],
+        "hasStatusIndicator": false
+      }
+    },
+    "iconography": {
+      "style": "Line",
+      "strokeWidth": "1.5px",
+      "size": "16px or 20px",
+      "color": "colors.text.secondary",
+      "description": "Icons are minimalist, clean, and purely functional. They should not be ornate."
+    },
+    "effects": {
+      "shadows": {
+        "type": "Soft and diffused",
+        "color": "rgba(0, 0, 0, 0.2)",
+        "description": "Shadows are used to lift components off the background, creating a sense of depth and hierarchy."
+      },
+      "glow": {
+        "type": "Subtle outer glow on interactive or highlighted elements",
+        "color": "colors.accent.primary with low opacity"
+      }
+    }
+  }
+}

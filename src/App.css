@@ -1,0 +1,15 @@
+.App {
+  background-color: rgba(23, 26, 40, 1);
+  min-height: 100vh;
+  color: white;
+}
+
+.App-header {
+  padding: 24px;
+  text-align: center;
+}
+
+.App-header h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
