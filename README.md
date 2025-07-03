@@ -91,4 +91,4 @@ Contributions are welcome! If you have suggestions for improvements, new feature
 6. Open a Pull Request.
 
 ## License
-This project is licensed under the MIT License - see the LICENSE.md file for details. (Note: A LICENSE.md file does not currently exist in the provided directory structure. You may want to create one.)
+This project is licensed under the MIT License - see the LICENSE.md file for details. (Note: A LICENSE.md file does not currently exist in the provided directory structure. You may want to create one..)
