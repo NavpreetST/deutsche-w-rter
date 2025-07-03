@@ -26,7 +26,7 @@ fs.readFile(path.join(__dirname, 'words.json'), 'utf8', (err, data) => {
         console.error('Error parsing words.json:', parseErr);
     }
 });
-
+module.exports = app;
 // Function to get a specified number of random words
 const getRandomWords = (count) => {
     if (words.length === 0) {
